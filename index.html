@@ -1,25 +1,26 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
-  <head>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PH Birais | Arquiteto de Soluções & Inovação</title>
-    
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="PH Birais | Arquiteto de Soluções & Inovação" />
-    <meta property="og:description" content="Portfólio profissional de Pedro Henrique Birais, destacando sua atuação em IA, software e transformação digital." />
-    <meta property="og:image" content="https://via.placeholder.com/1200x630.png/10B981/FFFFFF?text=Pedro+Henrique+Birais" />
-    <meta property="og:url" content="[URL_DO_SEU_PORTFOLIO_AQUI]" />
-    <meta property="og:type" content="website" />
+    <title>PH Birais - Portfólio de Inovação</title>
 
+    <!-- Meta Tags for Social Sharing (Open Graph) -->
+    <meta property="og:title" content="Pedro Henrique Birais - Portfólio de Inovação" />
+    <meta property="og:description" content="Portfólio profissional destacando atuação em IA, software e transformação digital." />
+    <meta property="og:image" content="https://github.com/phbirais.png" />
+    <meta property="og:url" content="https://phbirais.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
@@ -29,67 +30,167 @@
 }
 </script>
 </head>
-  <body class="bg-light-bg text-dark-text font-sans">
-    <div id="root">
-      <div class="bg-light-bg text-dark-text font-sans">
-        <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
-          <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold text-brand-green-dark">Portfólio</a>
-            <div class="hidden md:flex items-center space-x-8">
-              <a href="#home" class="text-medium-text hover:text-brand-green-dark transition-colors">Início</a>
-              <a href="#about" class="text-medium-text hover:text-brand-green-dark transition-colors">Sobre</a>
-              <a href="#education" class="text-medium-text hover:text-brand-green-dark transition-colors">Formação</a>
-              <a href="#projects" class="text-medium-text hover:text-brand-green-dark transition-colors">Projetos</a>
-              <a href="#testimonials" class="text-medium-text hover:text-brand-green-dark transition-colors">Depoimentos</a>
-              <a href="#articles" class="text-medium-text hover:text-brand-green-dark transition-colors">Artigos</a>
-              <a href="#contact" class="bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-brand-green-dark transition-all duration-300">Contato</a>
-            </div>
-            <div class="md:hidden">
-              <button id="hamburger-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" class="text-dark-text focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-              </button>
-            </div>
-          </nav>
-          <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+<body class="bg-light-bg text-dark-text font-sans">
+    <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+          <a href="#home" class="text-2xl font-bold text-brand-green-dark">Portfólio</a>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-medium-text hover:text-brand-green-dark transition-colors">Início</a>
+            <a href="#about" class="text-medium-text hover:text-brand-green-dark transition-colors">Sobre</a>
+            <a href="#education" class="text-medium-text hover:text-brand-green-dark transition-colors">Formação</a>
+            <a href="#projects" class="text-medium-text hover:text-brand-green-dark transition-colors">Projetos</a>
+            <a href="#testimonials" class="text-medium-text hover:text-brand-green-dark transition-colors">Depoimentos</a>
+            <a href="#articles" class="text-medium-text hover:text-brand-green-dark transition-colors">Artigos</a>
+            <a href="#contact" class="bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-brand-green-dark transition-all duration-300">Contato</a>
+          </div>
+          <div class="md:hidden">
+            <button id="hamburger-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" class="text-dark-text focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
-              <a href="#home" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Início</a>
-              <a href="#about" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
-              <a href="#education" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Formação</a>
-              <a href="#projects" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Projetos</a>
-              <a href="#testimonials" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Depoimentos</a>
-              <a href="#articles" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Artigos</a>
-              <a href="#contact" class="w-full text-center mt-2 bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-brand-green-dark transition-all duration-300">Contato</a>
+              <a href="#home" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Início</a>
+              <a href="#about" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
+              <a href="#education" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Formação</a>
+              <a href="#projects" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Projetos</a>
+              <a href="#testimonials" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Depoimentos</a>
+              <a href="#articles" class="mobile-nav-link text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Artigos</a>
+              <a href="#contact" class="mobile-nav-link w-full text-center mt-2 bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-brand-green-dark transition-all duration-300">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+        <!-- Hero Section -->
+        <section id="home" class="pt-28 pb-12 flex items-center min-h-screen">
+          <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
+            <div class="animate-fade-in-left">
+              <span class="font-mono text-brand-green-dark">Olá, meu nome é</span>
+              <h1 class="text-5xl md:text-6xl font-extrabold text-dark-text my-3">Pedro Henrique Birais</h1>
+              <h2 class="text-2xl md:text-3xl font-semibold text-brand-green-dark mb-6">Arquiteto de Soluções &amp; Líder Técnico em IA e Inovação.</h2>
+              <p class="text-lg text-medium-text mb-8 max-w-xl leading-relaxed">Especialista em transformar desafios complexos em soluções tecnológicas de alto impacto, com foco em Inteligência Artificial, IoT e Indústria 4.0.</p>
+              <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="hero-button-primary">Meus Projetos</a>
+                <a href="https://linkedin.com/in/phbirais" target="_blank" rel="noopener noreferrer" class="hero-button-secondary">LinkedIn</a>
+              </div>
+            </div>
+            <div class="hidden lg:flex justify-center items-center animate-fade-in-right">
+              <div class="relative w-80 h-80 lg:w-96 lg:h-96">
+                <div class="absolute inset-0 bg-brand-green/20 rounded-full transform rotate-6"></div>
+                <img src="https://github.com/phbirais.png" alt="Foto de Pedro Henrique Birais" class="relative rounded-full w-full h-full object-cover border-8 border-white shadow-2xl" />
+              </div>
             </div>
           </div>
-        </header>
-        <main class="container mx-auto px-6">
-          <section id="home" class="pt-28 pb-12 flex items-center min-h-screen">
-            <!-- Conteúdo da HeroSection -->
-          </section>
-          <section id="about" class="py-12">
-            <!-- Conteúdo da AboutSection -->
-          </section>
-          <section id="education" class="py-12">
-            <!-- Conteúdo da EducationSection -->
-          </section>
-          <section id="projects" class="py-12">
-            <!-- Conteúdo da ProjectsSection -->
-          </section>
-          <section id="testimonials" class="py-12 bg-gray-50/50">
-            <!-- Conteúdo da TestimonialsSection -->
-          </section>
-          <section id="articles" class="py-12">
-            <!-- Conteúdo da ArticlesSection -->
-          </section>
-        </main>
-        <footer id="contact" class="py-12 text-center border-t border-gray-200">
-          <!-- Conteúdo da ContactSection -->
-        </footer>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-12">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Sobre <span class="text-brand-green-dark">Mim</span></h2>
+                <p class="section-subtitle">Apaixonado por resolver problemas complexos com tecnologia e inovação.</p>
+            </div>
+            <div class="grid lg:grid-cols-5 gap-12 items-start">
+                <div class="lg:col-span-3 space-y-4">
+                    <p class="text-medium-text leading-relaxed">Com mais de uma década de experiência em desenvolvimento de produtos e projetos, minha jornada é movida pela paixão de resolver problemas complexos com tecnologia. No Distrito Tecnológico do SENAI-SP, lidero projetos de inovação, focando na digitalização industrial através de IA, IoT e sistemas conectados.</p>
+                    <blockquote class="mt-6 p-4 border-l-4 border-brand-green bg-green-50 rounded-r-lg">
+                        <h4 class="font-bold text-lg text-dark-text mb-2">Minha Filosofia de Trabalho</h4>
+                        <p class="text-medium-text italic">"Acredito que a melhor inovação nasce da colaboração entre a expertise técnica e uma visão clara de futuro. Meu foco é traduzir a complexidade tecnológica em soluções de negócio com impacto mensurável, sempre colocando o usuário no centro da estratégia."</p>
+                    </blockquote>
+                </div>
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="info-card"><h3 class="info-card-title">Arquiteto de Soluções</h3><p class="text-medium-text">Desenhando sistemas escaláveis e resilientes que integram IA e IoT para a Indústria 4.0.</p></div>
+                    <div class="info-card"><h3 class="info-card-title">Gestão Técnica</h3><p class="text-medium-text">Liderando equipes multidisciplinares para entregar projetos de alto impacto, do conceito à produção.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-12">
+            <div class="text-center mb-16">
+                <h2 class="section-title">Formação <span class="text-brand-green-dark">Acadêmica</span></h2>
+                <p class="section-subtitle">Minha jornada de aprendizado contínuo, construindo uma base sólida em tecnologia, engenharia e gestão.</p>
+            </div>
+            <div class="relative max-w-2xl mx-auto">
+                <div class="absolute left-3 top-0 h-full w-0.5 bg-brand-green/30" aria-hidden="true"></div>
+                <div class="relative flex flex-col gap-12">
+                    <div class="pl-12 relative animate-fade-in-up" style="animation-delay: 0s;"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><div class="timeline-card"><p class="timeline-period">2024 - Presente</p><h3 class="timeline-title">Doutorando em Sistemas Inteligentes</h3><p class="timeline-institution">Universidade Federal do ABC (UFABC)</p></div></div>
+                    <div class="pl-12 relative animate-fade-in-up" style="animation-delay: 0.2s;"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><div class="timeline-card"><p class="timeline-period">2024 - 2026</p><h3 class="timeline-title">MBA em Gestão de Projetos</h3><p class="timeline-institution">Fundação Getulio Vargas (FGV)</p></div></div>
+                    <div class="pl-12 relative animate-fade-in-up" style="animation-delay: 0.4s;"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><div class="timeline-card"><p class="timeline-period">2020 - 2023</p><h3 class="timeline-title">Mestrado em Engenharia Robótica</h3><p class="timeline-institution">Universidade Federal do ABC (UFABC)</p></div></div>
+                    <div class="pl-12 relative animate-fade-in-up" style="animation-delay: 0.6s;"><div class="timeline-dot"><div class="timeline-dot-inner"></div></div><div class="timeline-card"><p class="timeline-period">2013 - 2018</p><h3 class="timeline-title">Bacharel em Engenharia Robótica</h3><p class="timeline-institution">Universidade Federal do ABC (UFABC)</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-12">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Projetos em <span class="text-brand-green-dark">Destaque</span></h2>
+                <p class="section-subtitle">Soluções que desenvolvi e liderei, aplicando tecnologia para resolver desafios reais da indústria e do mercado.</p>
+            </div>
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project cards will be injected here by script.js, but we can have static ones too -->
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-12 bg-gray-50/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="section-title">O que dizem sobre o <span class="text-brand-green-dark">meu trabalho</span></h2>
+                    <p class="section-subtitle">Feedbacks de colegas e parceiros com quem tive o prazer de colaborar em diversos projetos.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="testimonial-card"><div class="testimonial-icon"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg></div><blockquote class="testimonial-quote"><p>"É um excelente profissional. Criativo, centrado, inteligente e tranquilo. Tem um cuidado especial com a qualidade de suas entregas!"</p></blockquote><div><div class="font-bold text-dark-text">SUELI TRAJANO</div><div class="text-sm text-brand-green-dark">BIG BRAIN</div></div></div>
+                    <div class="testimonial-card"><div class="testimonial-icon"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg></div><blockquote class="testimonial-quote"><p>"Se você procura resultado, profissionalismo e eficiência em modelagem e impressão de peças mecânicas em 3D, encontrou. Pedro domina as técnicas, processos e melhores materiais. Acelerou nossa prototipagem e nosso processo de industrialização. Recomendo!"</p></blockquote><div><div class="font-bold text-dark-text">VICTOR DIAGO</div><div class="text-sm text-brand-green-dark">ALFA SENSE</div></div></div>
+                    <div class="testimonial-card"><div class="testimonial-icon"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M6 2L3 6v8h6V8l3-4H6zm8 0l-3 4v8h6V8l3-4h-6z"></path></svg></div><blockquote class="testimonial-quote"><p>"Muito bom o curso! Didática 100% Parabéns e obrigado!"</p></blockquote><div><div class="font-bold text-dark-text">ALUNO UDEMY</div><div class="text-sm text-brand-green-dark"></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section id="articles" class="py-12">
+            <div class="text-center mb-12">
+                <h2 class="section-title">Pensando a <span class="text-brand-green-dark">Inovação</span></h2>
+                <p class="section-subtitle">Ideias, reflexões e aprendizados que compartilho sobre tecnologia, liderança e o futuro da indústria.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <a href="https://www.proceedings.blucher.com.br/article-details/inventory-automation-development-of-computer-vision-in-drones-39878" target="_blank" rel="noopener noreferrer" class="article-card"><p class="article-platform">Blucher Proceedings</p><h3 class="article-title">INVENTORY AUTOMATION DEVELOPMENT OF COMPUTER VISION IN DRONES</h3><span class="article-link">Ler artigo &rarr;</span></a>
+                <a href="https://phbirais.medium.com/o-que-significa-saber-ia-no-curr%C3%ADculo-profissional-do-futuro-abcafe422a2f" target="_blank" rel="noopener noreferrer" class="article-card"><p class="article-platform">Medium</p><h3 class="article-title">O que significa saber IA no currículo profissional do futuro?</h3><span class="article-link">Ler artigo &rarr;</span></a>
+                <a href="https://phbirais.medium.com/7-benef%C3%ADcios-da-realidade-aumentada-na-educa%C3%A7%C3%A3o-4ded4383cca5" target="_blank" rel="noopener noreferrer" class="article-card"><p class="article-platform">Medium</p><h3 class="article-title">7 benefícios da Realidade Aumentada na Educação</h3><span class="article-link">Ler artigo &rarr;</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="py-12 text-center border-t border-gray-200">
+      <h2 class="section-title">Vamos Colaborar?</h2>
+      <p class="section-subtitle mb-8">Estou sempre aberto a novas conexões, projetos desafiadores e oportunidades para compartilhar conhecimento. Se você tem uma ideia ou um desafio, vamos conversar.</p>
+      <div class="flex justify-center items-center gap-6 mb-12">
+        <a href="https://linkedin.com/in/phbirais" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Meu perfil no LinkedIn"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+        <a href="https://github.com/phbirais" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Meu perfil no GitHub"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+        <a href="mailto:phbirais@gmail.com" class="social-icon" aria-label="Enviar um e-mail"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></a>
+        <a href="tel:+5511976756446" class="social-icon" aria-label="Ligar para o meu telefone"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+        <a href="https://medium.com/@phbirais" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Meu perfil no Medium"><svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.45,12.06a4.87,4.87,0,0,0-1.2.1,1.58,1.58,0,0,0-.9.45,1.25,1.25,0,0,0-.4,1,1,1,0,0,0,.1.45,1.3,1.3,0,0,0,.4.5,1.72,1.72,0,0,0,.8.3,4.68,4.68,0,0,0,1.2.1h.1a4.68,4.68,0,0,0,1.2-.1,1.72,1.72,0,0,0,.8-.3,1.3,1.3,0,0,0,.4-.5,1,1,0,0,0,.1-.45,1.25,1.25,0,0,0-.4-1,1.58,1.58,0,0,0-.9-.45,4.87,4.87,0,0,0-1.2-.1Zm5-1.5a1.7,1.7,0,0,0-1,.4,1.4,1.4,0,0,0-.4,1v5a1.4,1.4,0,0,0,.4,1,1.7,1.7,0,0,0,1,.4h.1a1.7,1.7,0,0,0,1-.4,1.4,1.4,0,0,0,.4-1v-5a1.4,1.4,0,0,0-.4-1,1.7,1.7,0,0,0-1-.4Zm5.1-.4a2,2,0,0,0-1.2.4,1.3,1.3,0,0,0-.5,1V16a1.2,1.2,0,0,0,.5,1,2,2,0,0,0,1.2.4h.1a1.8,1.8,0,0,0,1.2-.4,1.2,1.2,0,0,0,.5-1V11.5a1.3,1.3,0,0,0-.5-1,2,2,0,0,0-1.2-.4Z"></path></svg></a>
       </div>
+      <p class="font-mono text-brand-green-dark tracking-wider">Transformando ideias em soluções — com código, dados e visão.</p>
+      <p class="text-gray-500 text-sm mt-8">&copy; <span id="year"></span> Pedro Henrique Birais. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+        <div id="modal-content" class="bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-8 relative">
+            <button id="modal-close-button" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800" aria-label="Fechar modal">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <div id="modal-body">
+                <!-- Modal content will be injected here by script.js -->
+            </div>
+        </div>
     </div>
-    <div id="project-modal-container"></div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
