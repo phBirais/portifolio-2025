@@ -1,0 +1,111 @@
+
+/* Importação do Tailwind CSS (base, components, utilities) */
+@import "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
+
+/* Definições de Fontes e Cores Personalizadas */
+:root {
+  --brand-green: #10B981;
+  --brand-green-light: #34D399;
+  --brand-green-dark: #047857;
+  --light-bg: #f8f9fa;
+  --dark-text: #111827;
+  --medium-text: #4b5563;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+.font-mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px var(--brand-green), 0 0 10px var(--brand-green), 0 0 15px var(--brand-green-light); }
+  50% { box-shadow: 0 0 10px var(--brand-green-light), 0 0 20px var(--brand-green-light), 0 0 25px var(--brand-green); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Estilos de componentes que não são facilmente cobertos por utilitários */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.bg-white\/80 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-brand-green\/10 {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.bg-brand-green\/20 {
+    background-color: rgba(16, 185, 129, 0.2);
+}
+
+.bg-brand-green\/90 {
+    background-color: rgba(16, 185, 129, 0.9);
+}
+
+.border-brand-green\/50 {
+    border-color: rgba(16, 185, 129, 0.5);
+}
+
+.border-brand-green\/20 {
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 56rem; /* max-w-3xl */
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 2rem;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+    transform: translateY(0);
+}

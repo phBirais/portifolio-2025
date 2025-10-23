@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
   <head>
@@ -13,56 +14,82 @@
     <meta property="og:url" content="[URL_DO_SEU_PORTFOLIO_AQUI]" />
     <meta property="og:type" content="website" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Poppins', 'sans-serif'],
-              mono: ['Roboto Mono', 'monospace'],
-            },
-            colors: {
-              'brand-green': '#10B981',
-              'brand-green-light': '#34D399',
-              'brand-green-dark': '#047857',
-              'light-bg': '#f8f9fa',
-              'dark-text': '#111827',
-              'medium-text': '#4b5563',
-            },
-            animation: {
-              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-              'glow': 'glow 4s ease-in-out infinite'
-            },
-            keyframes: {
-              fadeInUp: {
-                '0%': { opacity: '0', transform: 'translateY(20px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              },
-              glow: {
-                '0%, 100%': { boxShadow: '0 0 5px #10B981, 0 0 10px #10B981, 0 0 15px #34D399' },
-                '50%': { boxShadow: '0 0 10px #34D399, 0 0 20px #34D399, 0 0 25px #10B981' },
-              }
-            }
-          },
-        },
-      }
-    </script>
+    
+    <link rel="stylesheet" href="style.css">
   <script type="importmap">
 {
   "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
   }
 }
 </script>
 </head>
   <body class="bg-light-bg text-dark-text font-sans">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <div id="root">
+      <div class="bg-light-bg text-dark-text font-sans">
+        <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
+          <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-brand-green-dark">Portfólio</a>
+            <div class="hidden md:flex items-center space-x-8">
+              <a href="#home" class="text-medium-text hover:text-brand-green-dark transition-colors">Início</a>
+              <a href="#about" class="text-medium-text hover:text-brand-green-dark transition-colors">Sobre</a>
+              <a href="#education" class="text-medium-text hover:text-brand-green-dark transition-colors">Formação</a>
+              <a href="#projects" class="text-medium-text hover:text-brand-green-dark transition-colors">Projetos</a>
+              <a href="#testimonials" class="text-medium-text hover:text-brand-green-dark transition-colors">Depoimentos</a>
+              <a href="#articles" class="text-medium-text hover:text-brand-green-dark transition-colors">Artigos</a>
+              <a href="#contact" class="bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-brand-green-dark transition-all duration-300">Contato</a>
+            </div>
+            <div class="md:hidden">
+              <button id="hamburger-button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" class="text-dark-text focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+              </button>
+            </div>
+          </nav>
+          <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col items-center">
+              <a href="#home" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Início</a>
+              <a href="#about" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
+              <a href="#education" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Formação</a>
+              <a href="#projects" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Projetos</a>
+              <a href="#testimonials" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Depoimentos</a>
+              <a href="#articles" class="text-medium-text hover:text-brand-green-dark block px-3 py-2 rounded-md text-base font-medium">Artigos</a>
+              <a href="#contact" class="w-full text-center mt-2 bg-brand-green text-white font-bold py-2 px-4 rounded-lg hover:bg-brand-green-dark transition-all duration-300">Contato</a>
+            </div>
+          </div>
+        </header>
+        <main class="container mx-auto px-6">
+          <section id="home" class="pt-28 pb-12 flex items-center min-h-screen">
+            <!-- Conteúdo da HeroSection -->
+          </section>
+          <section id="about" class="py-12">
+            <!-- Conteúdo da AboutSection -->
+          </section>
+          <section id="education" class="py-12">
+            <!-- Conteúdo da EducationSection -->
+          </section>
+          <section id="projects" class="py-12">
+            <!-- Conteúdo da ProjectsSection -->
+          </section>
+          <section id="testimonials" class="py-12 bg-gray-50/50">
+            <!-- Conteúdo da TestimonialsSection -->
+          </section>
+          <section id="articles" class="py-12">
+            <!-- Conteúdo da ArticlesSection -->
+          </section>
+        </main>
+        <footer id="contact" class="py-12 text-center border-t border-gray-200">
+          <!-- Conteúdo da ContactSection -->
+        </footer>
+      </div>
+    </div>
+    <div id="project-modal-container"></div>
+    <script src="script.js"></script>
   </body>
 </html>
