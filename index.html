@@ -19,20 +19,11 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
 </head>
 <body class="bg-light-bg text-dark-text font-sans">
     <header class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-sm z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#home" class="text-2xl font-bold text-brand-green-dark">Portfólio</a>
+          <a href="#home" class="text-xl font-bold text-brand-green-dark border-2 border-brand-green-dark px-3 py-1 rounded">Portfólio</a>
           <div class="hidden md:flex items-center space-x-8">
             <a href="#home" class="text-medium-text hover:text-brand-green-dark transition-colors">Início</a>
             <a href="#about" class="text-medium-text hover:text-brand-green-dark transition-colors">Sobre</a>
@@ -65,12 +56,12 @@
 
     <main class="container mx-auto px-6">
         <!-- Hero Section -->
-        <section id="home" class="pt-28 pb-12 flex items-center min-h-screen">
+        <section id="home" class="pt-24 pb-10 flex items-center min-h-screen">
           <div class="grid lg:grid-cols-2 gap-12 items-center w-full">
             <div class="animate-fade-in-left">
               <span class="font-mono text-brand-green-dark">Olá, meu nome é</span>
-              <h1 class="text-5xl md:text-6xl font-extrabold text-dark-text my-3">Pedro Henrique Birais</h1>
-              <h2 class="text-2xl md:text-3xl font-semibold text-brand-green-dark mb-6">Arquiteto de Soluções &amp; Líder Técnico em IA e Inovação.</h2>
+              <h1 class="text-4xl md:text-5xl font-extrabold text-dark-text my-3">Pedro Henrique Birais</h1>
+              <h2 class="text-xl md:text-2xl font-semibold text-brand-green-dark mb-6">Arquiteto de Soluções &amp; Líder Técnico em IA e Inovação.</h2>
               <p class="text-lg text-medium-text mb-8 max-w-xl leading-relaxed">Especialista em transformar desafios complexos em soluções tecnológicas de alto impacto, com foco em Inteligência Artificial, IoT e Indústria 4.0.</p>
               <div class="flex flex-wrap gap-4">
                 <a href="#projects" class="hero-button-primary">Meus Projetos</a>
@@ -87,7 +78,7 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-12">
+        <section id="about" class="py-10">
             <div class="text-center mb-12">
                 <h2 class="section-title">Sobre <span class="text-brand-green-dark">Mim</span></h2>
                 <p class="section-subtitle">Apaixonado por resolver problemas complexos com tecnologia e inovação.</p>
@@ -108,7 +99,7 @@
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="py-12">
+        <section id="education" class="py-10">
             <div class="text-center mb-16">
                 <h2 class="section-title">Formação <span class="text-brand-green-dark">Acadêmica</span></h2>
                 <p class="section-subtitle">Minha jornada de aprendizado contínuo, construindo uma base sólida em tecnologia, engenharia e gestão.</p>
@@ -125,7 +116,7 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="py-12">
+        <section id="projects" class="py-10">
             <div class="text-center mb-12">
                 <h2 class="section-title">Projetos em <span class="text-brand-green-dark">Destaque</span></h2>
                 <p class="section-subtitle">Soluções que desenvolvi e liderei, aplicando tecnologia para resolver desafios reais da indústria e do mercado.</p>
@@ -136,7 +127,7 @@
         </section>
         
         <!-- Testimonials Section -->
-        <section id="testimonials" class="py-12 bg-gray-50/50">
+        <section id="testimonials" class="py-10 bg-gray-50/50">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
                     <h2 class="section-title">O que dizem sobre o <span class="text-brand-green-dark">meu trabalho</span></h2>
@@ -151,7 +142,7 @@
         </section>
 
         <!-- Articles Section -->
-        <section id="articles" class="py-12">
+        <section id="articles" class="py-10">
             <div class="text-center mb-12">
                 <h2 class="section-title">Pensando a <span class="text-brand-green-dark">Inovação</span></h2>
                 <p class="section-subtitle">Ideias, reflexões e aprendizados que compartilho sobre tecnologia, liderança e o futuro da indústria.</p>
@@ -164,7 +155,7 @@
         </section>
     </main>
 
-    <footer id="contact" class="py-12 text-center border-t border-gray-200">
+    <footer id="contact" class="py-10 text-center border-t border-gray-200">
       <h2 class="section-title">Vamos Colaborar?</h2>
       <p class="section-subtitle mb-8">Estou sempre aberto a novas conexões, projetos desafiadores e oportunidades para compartilhar conhecimento. Se você tem uma ideia ou um desafio, vamos conversar.</p>
       <div class="flex justify-center items-center gap-6 mb-12">
@@ -180,7 +171,7 @@
 
     <!-- Project Modal -->
     <div id="project-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-        <div id="modal-content" class="bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-8 relative">
+        <div id="modal-content" class="bg-white rounded-lg shadow-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto p-6 relative">
             <button id="modal-close-button" class="absolute top-4 right-4 text-gray-400 hover:text-gray-800" aria-label="Fechar modal">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
             </button>
