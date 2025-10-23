@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { name: "Tamandutech", description: "Criação e liderança da equipe de robótica de competição da UFABC com mais de 60 integrantes.", tech: ["Robótica", "C++", "Python", "Hardware"], link: "https://www.instagram.com/tamandutech/", imageUrl: "https://via.placeholder.com/500x300.png/10B981/FFFFFF?text=Tamandutech", challenge: "A UFABC carecia de uma equipe de robótica de competição consolidada que pudesse representar a universidade em torneios e servir como um polo de desenvolvimento prático.", myRole: "Fui um dos fundadores e líder da equipe por mais de 5 anos, sendo responsável pela gestão de projetos, captação de recursos, e mentoria técnica das áreas de software e eletrônica.", solution: "Estruturamos a equipe do zero, definindo processos de gestão, criando sub-equipes (mecânica, eletrônica, software) e desenvolvendo robôs para diversas competições, como a RoboCup.", impact: "Consolidamos uma equipe com mais de 60 membros, conquistamos múltiplos prêmios em competições nacionais e estabelecemos parcerias que garantiram a sustentabilidade do projeto." }
     ];
 
+
     // --- Project Cards & Modal Handler ---
     const projectsGrid = document.getElementById('projects-grid');
     const modal = document.getElementById('project-modal');
